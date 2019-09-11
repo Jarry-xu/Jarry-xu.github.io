@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":false,"style":"default"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    search: {
+      root: '/',
+      path: ''
+    },
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta name="description" content="机器学习/大数据">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jarry&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Jarry&#39;s Blog">
+<meta property="og:description" content="机器学习/大数据">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jarry&#39;s Blog">
+<meta name="twitter:description" content="机器学习/大数据">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  
+  <title>Jarry's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jarry's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay hungry,Stay foolish</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/【学习系列】学习的道术器/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jarry_Xu">
+      <meta itemprop="description" content="机器学习/大数据">
+      <meta itemprop="image" content="http://ww1.sinaimg.cn/large/844405dcgy1g5fkl1th5wj20hs0hsjsi.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jarry's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/29/【学习系列】学习的道术器/" class="post-title-link" itemprop="url">【学习系列】学习的道术器</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-29 17:56:30" itemprop="dateCreated datePublished" datetime="2019-07-29T17:56:30+08:00">2019-07-29</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-11 15:47:30" itemprop="dateModified" datetime="2019-08-11T15:47:30+08:00">2019-08-11</time>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span title="本文字数">2.8k</span>
+            </span>
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span title="阅读时长">3 分钟</span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之所以写学习系列，是因为从高中开始自己就开始关注学习的策略与方法，并且乐此不疲（其实就是想找办法偷懒）。那时候对于学习这件事情没有很深入的认识，更多地看到的层面是术（方法）与器（工具），对学习的原理没有什么认识。等到大学的时候在学习之余从多方渠道接触到更加广阔的学习之道，深深为之着迷。借着两三年的积累余热，将自己的收获理解系统地写下来~</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
+<li><p>重新理解学习</p>
+</li>
+<li><p>学习之道</p>
+<ol>
+<li>学习与记忆</li>
+<li>学习的三层次</li>
+<li>学习五部曲</li>
+<li>有效学习的三个要素</li>
+<li>学习的最终目的</li>
+</ol>
+</li>
+<li><p>正确的学习观念</p>
+</li>
+</ol>
+<h2 id="重新理解学习"><a href="#重新理解学习" class="headerlink" title="重新理解学习"></a>重新理解学习</h2><p>当我们在谈论学习的时候，我们在谈论什么？</p>
+<p>对于学生时代的我们来说，学习意味着上课、看课本、记住知识点、做题、应付考试。在我看来，这是狭义的学习，这仅仅是知识的学习。</p>
+<p>其实我们做任何事情都可以看做是在学习，刚开始骑自行车的时候，是在学习如何在两轮车行进中保持平衡，刚开始工作的时候，是在学习如何与人打交道，我们在睡觉的时候其实也在学习hhh，不过发挥作用的是我们的潜意识，将白天所见所闻进行再加工。</p>
+<p>学习说的简单一点，就是在给定<strong>大量的</strong>输入输出的例子的情况下，我们去学习从输入到输出的变换（模式 or 函数 or 模型）。找到了这个变换之后，我们就能在遇到没见过的例子时，啪的一下掏出这个万金油模型，得出输出结果。我们生活中很多时候就是依据过去的经验来对现在遇到的事情进行分析判断。</p>
+<p>模型：过去的经验</p>
+<p>输入：现在遇到的事情</p>
+<p>输出：得出的判断、结论</p>
+<p>一般来说，我们所接收的<strong>正确的</strong>输入输出越多，那么得到的模型的普适性（泛化能力）就越好。但是存在<strong>个体差异</strong>，有些人善于观察总结规律，有些人能够跨领域建立联系，这本身就会造成模型的差异，所幸的是，得到模型的这个过程是可以优化，可以提高的，我在之后的文章会详细说到。</p>
+<h2 id="学习之道"><a href="#学习之道" class="headerlink" title="学习之道"></a>学习之道</h2><p>这一节主要聊一聊这几个方面：学习与记忆的原理，高段位学习与低段位学习的区别，学习的本质步骤，什么样才算是有效的学习状态，学习的最终目的</p>
+<h3 id="学习与记忆"><a href="#学习与记忆" class="headerlink" title="学习与记忆"></a>学习与记忆</h3><p>学习和记忆永远都是分离不开的，有学习没有记忆，那就是脑子空荡荡一片真干净，有记忆没学习，那就是浪费大脑硬盘空间，还没啥用。</p>
+<blockquote>
+<p>你所学习的知识并不取决于你记得多少，而在于它们能否在恰当的时候被回忆起来 </p>
+<p>​                                                                                                                                    ——《暗时间》</p>
+</blockquote>
+<p>就我个人体验而言，我的记忆力在小学是巅峰，从初中开始稳定下滑，然后稳定在一定水平。一方面是对于死记硬背书本的厌烦，一方面是懒 。我频繁地使用便签，记事本来帮助我记录一些东西，但是这并不能挽救我的记忆力，反而让它对工具形成依赖，进一步退化。</p>
+<p>实际上，记忆力和意志力、肌肉一样，都遵从用进废退的规则，不去使用就会退化。</p>
+<p>那么怎样做到有效的记忆，提高记忆的质量？</p>
+<p>这取决于记忆的提取线索的丰富程度。如果在记忆的时候将环境、味道、声音、情绪状态、语言背景等等一起编码进线索中，那么之后回忆起来的概率就会大大提升。回到学习中，则是具体到将知识的概念、原理逻辑、应用背景、类似的问题都编码进记忆中，便成了“理解记忆”。而传统的机械式记忆，单单只记住了<strong>对知识的描述</strong>，线索过于贫乏。</p>
+<h3 id="学习的三个层次"><a href="#学习的三个层次" class="headerlink" title="学习的三个层次"></a>学习的三个层次</h3><p>学习可以分为知识学习、技能学习、能力学习三个层次</p>
+<p>我们在学校中接触最多的是知识学习，辅助以少量的技能学习。就我的本科专业（软件工程）来说，大部分时间是在学习专业知识，少量的时间学院会分配去进行上机实践操作（很水），实际上也学不到什么东西。</p>
+<p>知识学习是学习的最底层，学习知识的目的是习得某种技能进而掌握某种能力。依然拿我自己的专业来举栗子，我通过学习软件工程的基础课程，获得了计算机相关的知识，然后我需要将这些知识拿去应用，比如搭建个人网站、开发移动手机应用、开发电脑端程序等等，逐渐习得某个方向的专业技能，最后经过长时间的实践和积累，内化为自己的工程能力。遗憾的是我们的传统教育大多数时候仅仅停留和关注最底层。</p>
+<p>在如今的信息社会，知识是不值钱的，互联网到处都是知识。技能相对来说要值钱一点，但是技能也是竞争门槛比较低的，大部分技能在20个小时之内就能初步入门，大家都能够做的差不多好。唯有能力的不可替代性是最高的，因为能力的养成需要时间和效率的投入，成本门槛最高，也是因为能力的差异，导致了薪资的巨大差异。</p>
+<h3 id="学习的五部曲"><a href="#学习的五部曲" class="headerlink" title="学习的五部曲"></a>学习的五部曲</h3><p>总的来说，学习可以分为信息输入、理解、扩展、应用、纠错这五个步骤。信息获取的前提是拥有明确的学习目标，在此基础上进行信息的获取与处理，得到比较精炼、紧凑的知识信息。</p>
+<p>在理解阶段主要是搞懂知识在讲什么？逻辑是什么样的？为什么是这样？经过这个阶段，形成了一个粗糙的模型。</p>
+<p>在拓展阶段，对现在学的知识进行横向和纵向拓展，横向拓展是与相似的知识进行比较，有什么相似与不同之处，纵向拓展考虑的是知识的应用背景，如何与现实生活联系在一起。这个阶段将新知识与原有知识建立联系，更新了个人的知识体系</p>
+<p>在应用阶段，运用得到的模型去解决现实问题</p>
+<p>最后在纠错阶段，根据在实际应用得到的反馈去修改自己的模型</p>
+<h3 id="有效学习的三个要素"><a href="#有效学习的三个要素" class="headerlink" title="有效学习的三个要素"></a>有效学习的三个要素</h3><p>高效学习离不开三个要素：</p>
+<ol>
+<li>快速进入学习状态</li>
+<li>长期保持专注（心流）</li>
+<li>抗干扰</li>
+</ol>
+<p>关于这三点，我在之后的系列文章里面也会讲到，这里就先不展开讲了</p>
+<h3 id="学习的最终目的"><a href="#学习的最终目的" class="headerlink" title="学习的最终目的"></a>学习的最终目的</h3><p>好多人（没错，就是在下）从小学到大学都没搞明白学习最终到底是为了啥？学习不是为了应付无聊的考试和唠叨的父母。</p>
+<blockquote>
+<p>人类靠学习来找出能压缩所有例子的模型，从而运用模型来维持自身低熵状态</p>
+<p>​                                                                                                            —— 超智能体 学习观系列文章</p>
+</blockquote>
+<p>PS：低熵是相对稳定的状态</p>
+<p>往小了说，我个人认为学习的最终目的是通过学习知识，不断地扩展自己的知识体系，建立了更多的知识联系，从而获得更高的社会地位。</p>
+<p>从生物学的角度来看，在面对未知情况下，人们倾向于相信和追随拥有强大个人能力或者渊博知识的人来获得安全感，在远古时代，是部落的酋长和大祭司，在现在就是业界精英和各路专家。</p>
+<p>从个人角度来说，能够看见这个世界更多的选择和可能性本身就是一种信息不对称优势，利用这种优势能够使得自身获益。</p>
+<h3 id="正确的学习观念"><a href="#正确的学习观念" class="headerlink" title="正确的学习观念"></a>正确的学习观念</h3><blockquote>
+<p>1.盲目的学习是没有意义的，要刨根问底地主动学习</p>
+</blockquote>
+<blockquote>
+<p>2.实践是加深理解、促进掌握的唯一途径</p>
+</blockquote>
+<blockquote>
+<p>3.要学的东西可以有很多，但是你要选择学什么，不学什么</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+      <footer class="post-footer">
+
+   
+     <div>    
+      
+    </div>
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </footer></div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/28/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jarry_Xu">
+      <meta itemprop="description" content="机器学习/大数据">
+      <meta itemprop="image" content="http://ww1.sinaimg.cn/large/844405dcgy1g5fkl1th5wj20hs0hsjsi.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jarry's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/28/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-28 12:19:12" itemprop="dateCreated datePublished" datetime="2019-07-28T12:19:12+08:00">2019-07-28</time>
+            </span>
+          
+
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span title="本文字数">430</span>
+            </span>
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span title="阅读时长">1 分钟</span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+      <footer class="post-footer">
+
+   
+     <div>    
+      
+    </div>
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </footer></div>
+  
+  
+  
+  </article>
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" src="http://ww1.sinaimg.cn/large/844405dcgy1g5fkl1th5wj20hs0hsjsi.jpg" alt="Jarry_Xu">
+  
+  <p class="site-author-name" itemprop="name">Jarry_Xu</p>
+  <div class="site-description motion-element" itemprop="description">机器学习/大数据</div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:x18040623558@gmail.com" title="E-Mail &rarr; mailto:x18040623558@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
+
+          
+          
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jarry_Xu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">3k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">3 分钟</span>
+  
+</div>
+<div id="days"></div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("07/28/2019 15:13:14");//修改为自己的blog建站时间
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="本站已安全运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+    if (i<10)
+    {i="0" + i};
+    return i;
+}
+show_date_time();
+</script>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+
+  
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+</body>
+</html>
